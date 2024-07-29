@@ -1,6 +1,6 @@
 import { Link } from 'components/hover-animation-2/hover-animation-2'
-import aboutUs from '../../images/about-us.png'
-import clients from '../../images/clients.jpg'
+import aboutUs from 'assets/images/about-us.png'
+import clients from 'assets/images/clients.jpg'
 import styles from './why-we-section.module.sass'
 
 export const WhyWeSection = () => {

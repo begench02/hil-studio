@@ -1,7 +1,7 @@
 import { FiMousePointer } from 'react-icons/fi'
 import styles from './tilt-card.module.sass'
 import { useRef } from 'react'
-import AdHaven from '../../images/AdHaven.jpg'
+import AdHaven from 'assets/images/AdHaven.jpg'
 import { useMotionValue, useSpring, useTransform, motion } from 'framer-motion'
 
 export const TiltCard = () => {

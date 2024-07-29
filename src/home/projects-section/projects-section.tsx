@@ -3,7 +3,6 @@ import styles from './projects-section.module.sass'
 import { Button } from 'components/button/button'
 import clsx from 'clsx'
 
-
 export const ProjectsSection = () => {
 	return (
 		<>

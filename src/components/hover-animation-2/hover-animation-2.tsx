@@ -1,8 +1,8 @@
-import { FC, ReactNode, useRef } from 'react'
-import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion'
+import { FC, useRef } from 'react'
 import { FiArrowRight } from 'react-icons/fi'
-import aboutUs from '../../images/about-us.png'
-import clients from '../../images/clients.jpg'
+import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion'
+import aboutUs from 'assets/images/about-us.png'
+import clients from 'assets/images/clients.jpg'
 import styles from './hover-animation-2.module.sass'
 
 export const App = () => {
