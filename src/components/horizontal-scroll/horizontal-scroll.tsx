@@ -6,18 +6,7 @@ export const HorizontalScroll = () => {
 	const [animationDirection, setAnimationDirection] = useState<'forward' | 'backward'>('forward')
 
 	return (
-		<div
-			className={styles.scroller}
-			data-animated='true'
-			data-direction={animationDirection}
-			onClick={() => {
-				if (animationDirection === 'forward') {
-					setAnimationDirection('backward')
-				} else {
-					setAnimationDirection('forward')
-				}
-			}}
-		>
+		<div className={styles.scroller} data-animated='true' data-direction={animationDirection}>
 			<ul className={clsx(styles.tag_list, styles.scroller__inner)}>
 				<li>.bubble</li>
 				<li>Airtable</li>
