@@ -5,7 +5,7 @@ import styles from './app.module.sass'
 import { ProjectsSection } from './home/projects-section/projects-section'
 import { HorizontalScroll } from 'components/horizontal-scroll/horizontal-scroll'
 import { WhyWeSection } from './home/why-we-section/why-we-section'
-import Logo from './images/logo.svg'
+import Logo from './images/logo2.svg'
 
 export const App = () => {
 	return (
@@ -15,7 +15,7 @@ export const App = () => {
 				<div className={styles.hero}>
 					<Logo className={styles.logo} />
 				</div>
-				{/* <ProjectsSection /> */}
+				<ProjectsSection />
 				{/* <div className='full_width'>
 					<HorizontalScroll />
 				</div>
