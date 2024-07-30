@@ -5,7 +5,7 @@ import styles from './app.module.sass'
 import { ProjectsSection } from './home/projects-section/projects-section'
 import { HorizontalScroll } from 'components/horizontal-scroll/horizontal-scroll'
 import { WhyWeSection } from './home/why-we-section/why-we-section'
-import Logo from 'assets/images/logo3.svg'
+import Logo from 'assets/images/22.svg'
 import { SectionTwo } from './home/section-two/section-two'
 
 export const App = () => {
