@@ -71,8 +71,8 @@ export const Link: FC<LinkProps> = (props) => {
 					className={styles.heading}
 				>
 					{heading.split('').map((letter, index) => (
-						<motion.span
-							key={letter + index}
+						<motion.pre
+							key={index}
 							style={{ display: 'inline-block' }}
 							variants={{
 								initial: {
@@ -87,7 +87,7 @@ export const Link: FC<LinkProps> = (props) => {
 							}}
 						>
 							{letter}
-						</motion.span>
+						</motion.pre>
 					))}
 				</motion.span>
 				<motion.span

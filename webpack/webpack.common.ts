@@ -37,12 +37,12 @@ export const webpackCommon: Configuration = {
 					{ loader: MiniCssExtractPlugin.loader },
 					{ loader: 'css-modules-typescript-loader' },
 					{ loader: 'css-loader' },
-					{ loader: 'postcss-loader' },
+					// { loader: 'postcss-loader' },
 					{
 						loader: 'sass-loader',
 						options: {
 							sassOptions: {
-								includePaths: [path.resolve(__dirname, 'src/styles')],
+								includePaths: [path.resolve(__dirname, '../src/')],
 							},
 						},
 					},
@@ -53,7 +53,7 @@ export const webpackCommon: Configuration = {
 				type: 'asset/resource',
 			},
 			{
-				test: /\.(png|jpg|jpeg|gif)$/i,
+				test: /\.(png|jpg|webp|jpeg|gif)$/i,
 				type: 'asset/resource',
 			},
 			{

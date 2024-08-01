@@ -3,23 +3,26 @@
     padding-inline: 0
     li
         padding: 1rem
-        width: max-content
         border-radius: 0.5rem
 
 .scroller
     overflow: hidden
-    // max-width: 600px
-    color: #757575
-    font-size: 20px
+    color: #000
+    font-size: 60px
+    background-color: #FF9882
     font-weight: 600
-    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent)
+    // mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent)
 
 .scroller__inner
     width: fit-content
     display: flex
-    padding-block: 1rem
     gap: 1rem
     animation: scroll 60s linear infinite
+    li
+        font-family: sans-serif
+        font-weight: 900
+        display: inline-block
+        width: max-content
 
 .scroller[data-direction='backward']
     .scroller__inner

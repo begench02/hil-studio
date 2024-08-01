@@ -1,0 +1,48 @@
+.header
+    display: grid
+    grid-template-columns: 1fr 1fr
+    margin-block: 3rem
+
+.title
+    font-size: 45px
+    font-weight: 400
+
+.arrows
+    display: flex
+    gap: 1rem
+    align-items: center
+    justify-self: end
+    &__button
+        padding: 1rem
+        background-color: #fff
+        font-size: 20px
+        border: none
+        cursor: pointer
+        transition: 0.4s
+        &:hover:not([disabled])
+            background-color: #ffffffaf
+
+.content
+    overflow: hidden
+
+.carousel
+    display: flex
+    gap: 1rem
+
+.card
+    display: grid
+    grid-template-columns: 1fr 1.5fr
+    justify-items: center
+    align-items: center
+    flex-shrink: 0
+    padding: 2rem
+    background-color: #212121
+    width: 33%
+    margin-inline: auto
+    &__image
+        object-fit: contain
+        aspect-ratio: 1
+        border-radius: 50%
+        width: 60%
+    &__text
+        font-size: 30px

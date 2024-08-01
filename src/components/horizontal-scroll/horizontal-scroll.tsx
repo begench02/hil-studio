@@ -8,31 +8,30 @@ export const HorizontalScroll = () => {
 	return (
 		<div className={styles.scroller} data-animated='true' data-direction={animationDirection}>
 			<ul className={clsx(styles.tag_list, styles.scroller__inner)}>
-				<li>.bubble</li>
-				<li>Airtable</li>
-				<li>dokey.</li>
-				<li>Jotform</li>
-				<li>Typeform</li>
-				<li>.bubble</li>
-				<li>Airtable</li>
-				<li>dokey.</li>
-				<li>Jotform</li>
-				<li>Typeform</li>
-				<li>.bubble</li>
-				<li>Airtable</li>
-				<li>dokey.</li>
-				<li>Jotform</li>
-				<li>Typeform</li>
-				<li>.bubble</li>
-				<li>Airtable</li>
-				<li>dokey.</li>
-				<li>Jotform</li>
-				<li>Typeform</li>
-				<li>.bubble</li>
-				<li>Airtable</li>
-				<li>dokey.</li>
-				<li>Jotform</li>
-				<li>Typeform</li>
+				<li>AdHaven</li>
+				<li>Hereket Chesmesi</li>
+				<li>AdHaven</li>
+				<li>Hereket Chesmesi</li>
+				<li>AdHaven</li>
+				<li>Hereket Chesmesi</li>
+				<li>AdHaven</li>
+				<li>Hereket Chesmesi</li>
+				<li>AdHaven</li>
+				<li>Hereket Chesmesi</li>
+				<li>AdHaven</li>
+				<li>Hereket Chesmesi</li>
+				<li>AdHaven</li>
+				<li>Hereket Chesmesi</li>
+				<li>AdHaven</li>
+				<li>Hereket Chesmesi</li>
+				<li>AdHaven</li>
+				<li>Hereket Chesmesi</li>
+				<li>AdHaven</li>
+				<li>Hereket Chesmesi</li>
+				<li>AdHaven</li>
+				<li>Hereket Chesmesi</li>
+				<li>AdHaven</li>
+				<li>Hereket Chesmesi</li>
 			</ul>
 		</div>
 	)
