@@ -1,7 +1,7 @@
-import { TiltCard } from 'components/tilt-card/tilt-card'
-import styles from './projects-section.module.sass'
 import { Button } from 'components/button/button'
+import { TiltCard } from 'components/tilt-card/tilt-card'
 import clsx from 'clsx'
+import styles from './projects-section.module.sass'
 
 export const ProjectsSection = () => {
 	return (

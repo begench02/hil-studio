@@ -52,12 +52,11 @@ export const webpackCommon: Configuration = {
 				test: /\.(woff|woff2|eot|ttf|otf)$/i,
 				type: 'asset/resource',
 			},
+			// { test: /\.react.svg$/, use: ['@svgr/webpack'] },
+
 			{
-				test: /\.(png|jpg|webp|jpeg|gif)$/i,
-				type: 'asset/resource',
-			},
-			{
-				test: /\.svg$/,
+				test: /\.react.svg$/,
+				include: [path.resolve(__dirname, '../src/assets/images/icons/')],
 				use: [
 					{
 						loader: '@svgr/webpack',
@@ -76,6 +75,11 @@ export const webpackCommon: Configuration = {
 						},
 					},
 				],
+			},
+			{
+				test: /\.(png|jpg|webp|svg|jpeg|gif)$/i,
+				exclude: [path.resolve(__dirname, '../src/assets/images/icons')],
+				type: 'asset/resource',
 			},
 		],
 	},

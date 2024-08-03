@@ -1,3 +1,4 @@
+import { RouterProvider } from 'react-router-dom'
 import { App } from './app'
 import { createRoot } from 'react-dom/client'
 

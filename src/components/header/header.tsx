@@ -1,5 +1,7 @@
 import { FlipLink } from 'components/hover-animation-1/hover-animation-1'
 import styles from './header.module.sass'
+import { Link } from 'react-router-dom'
+import Logo from 'assets/images/icons/logo4.react.svg'
 
 export const Header = () => {
 	return (
@@ -7,21 +9,27 @@ export const Header = () => {
 			<nav>
 				<ul>
 					<li>
-						<FlipLink href='#'>Clients</FlipLink>
+						<Link to='clients'>
+							<FlipLink href='#'>Clients</FlipLink>
+						</Link>
 					</li>
 					<li>
 						<FlipLink href='#'>Projects</FlipLink>
 					</li>
 				</ul>
 			</nav>
-			<div className={styles.logo}>Begench</div>
+			<div className={styles.logo}>
+				<Logo width={300} height={200} />
+			</div>
 			<nav className={styles.nav_end}>
 				<ul>
 					<li>
 						<FlipLink href='#'>About</FlipLink>
 					</li>
 					<li>
-						<FlipLink href='#'>Contacts</FlipLink>
+						<Link to='contact-us'>
+							<FlipLink href='#'>Contacts</FlipLink>
+						</Link>
 					</li>
 				</ul>
 			</nav>
