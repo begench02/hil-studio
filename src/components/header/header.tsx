@@ -19,7 +19,9 @@ export const Header = () => {
 				</ul>
 			</nav>
 			<div className={styles.logo}>
-				<Logo width={300} height={200} />
+				<Link to='/'>
+					<Logo width={300} height={200} />
+				</Link>
 			</div>
 			<nav className={styles.nav_end}>
 				<ul>

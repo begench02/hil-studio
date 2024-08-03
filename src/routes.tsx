@@ -9,6 +9,8 @@ import styles from './app.module.sass'
 import type { RouteObject } from 'react-router-dom'
 import { ContactUs } from 'pages/contact-us/contact-us'
 import { Layout } from 'components/layout/layout'
+import one from 'assets/images/2.jpg'
+import clsx from 'clsx'
 
 export const Routes: RouteObject[] = [
 	{
@@ -19,12 +21,22 @@ export const Routes: RouteObject[] = [
 				path: '/',
 				Component: () => (
 					<div className='content_grid'>
-						<Header />
-						<div className={styles.hero}>hil studio</div>
-						<div className='breakout'>
+						<div className={clsx(styles.hero, 'full_width')}>Hil studio</div>
+						<section className='breakout'>
 							<SectionTwo />
-						</div>
+						</section>
 						<ProjectsSection />
+						<img
+							src={one}
+							className='breakout'
+							style={{
+								justifySelf: 'center',
+								height: '800px',
+								backgroundAttachment: 'fixed',
+								margin: '4rem 0',
+							}}
+						/>
+
 						<div className='full_width'>
 							<HorizontalScroll />
 						</div>

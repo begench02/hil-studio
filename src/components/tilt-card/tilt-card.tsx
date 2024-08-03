@@ -1,10 +1,10 @@
-import { FiMousePointer } from 'react-icons/fi'
 import styles from './tilt-card.module.sass'
-import { useRef } from 'react'
-import AdHaven from 'assets/images/AdHaven.jpg'
+import { FC, ReactNode, useRef } from 'react'
 import { useMotionValue, useSpring, useTransform, motion } from 'framer-motion'
 
-export const TiltCard = () => {
+export const TiltCard: FC<TiltCardProps> = (props) => {
+	const { children } = props
+
 	const x = useMotionValue(0)
 	const y = useMotionValue(0)
 
@@ -45,14 +45,11 @@ export const TiltCard = () => {
 			onMouseMove={handleMouseMove}
 			onMouseLeave={handleMouseLeave}
 		>
-			<div className={styles.content}>
-				<img src={AdHaven} alt='AdHaven' width={100} height={100} />
-				<p className={styles.title}>AdHaven</p>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, aliquid impedit sapiente nesciunt,
-					quam molestias perferendis quos, omnis minus accusantium cumque ex.
-				</p>
-			</div>
+			{children}
 		</motion.div>
 	)
+}
+
+type TiltCardProps = {
+	children: ReactNode
 }

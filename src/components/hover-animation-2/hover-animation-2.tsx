@@ -3,6 +3,7 @@ import { FiArrowRight } from 'react-icons/fi'
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion'
 import aboutUs from 'assets/images/about-us.png'
 import clients from 'assets/images/clients.jpg'
+import freeConsulting from 'assets/images/free-consulting.jpg'
 import styles from './hover-animation-2.module.sass'
 
 export const App = () => {
@@ -29,7 +30,7 @@ export const Link: FC<LinkProps> = (props) => {
 	const xSpring = useSpring(x)
 	const ySpring = useSpring(y)
 
-	const top = useTransform(ySpring, [0.5, -0.5], ['40%', '60%'])
+	const top = useTransform(ySpring, [0.5, -0.5], ['20%', '40%'])
 	const left = useTransform(xSpring, [0.5, -0.5], ['60%', '70%'])
 
 	const handleMouseMove = (event) => {
@@ -53,6 +54,24 @@ export const Link: FC<LinkProps> = (props) => {
 			initial='initial'
 			whileHover='whileHover'
 		>
+			<motion.img
+				variants={{
+					initial: {
+						scale: 0,
+						rotate: '-12.5deg',
+					},
+					whileHover: {
+						scale: 1,
+						rotate: '12.5deg',
+					},
+				}}
+				src={imgSrc}
+				transition={{
+					type: 'spring',
+				}}
+				className={styles.image}
+				style={{ top, left }}
+			/>
 			<div>
 				<motion.span
 					variants={{
@@ -106,25 +125,6 @@ export const Link: FC<LinkProps> = (props) => {
 					{subheading}
 				</motion.span>
 			</div>
-
-			<motion.img
-				variants={{
-					initial: {
-						scale: 0,
-						rotate: '-12.5deg',
-					},
-					whileHover: {
-						scale: 1,
-						rotate: '12.5deg',
-					},
-				}}
-				src={imgSrc}
-				transition={{
-					type: 'spring',
-				}}
-				className={styles.image}
-				style={{ top, left }}
-			/>
 
 			<motion.div
 				variants={{
