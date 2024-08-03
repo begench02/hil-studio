@@ -1,5 +1,5 @@
 import { FiArrowRight, FiArrowRightCircle } from 'react-icons/fi'
-import { motion } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
 import styles from './contact-us.module.sass'
 import { FiMail, FiMessageSquare } from 'react-icons/fi'
 

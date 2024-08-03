@@ -11,50 +11,62 @@ import { ContactUs } from 'pages/contact-us/contact-us'
 import { Layout } from 'components/layout/layout'
 import one from 'assets/images/2.jpg'
 import clsx from 'clsx'
+import { AnimatePresence } from 'framer-motion'
+import { AnimatedOutlet } from 'components/animated-outlet'
 
 export const Routes: RouteObject[] = [
 	{
 		path: '',
-		Component: Layout,
+		Component: () => (
+			<>
+				<AnimatedOutlet />
+			</>
+		),
 		children: [
 			{
 				path: '/',
 				Component: () => (
-					<div className='content_grid'>
-						<div className={clsx(styles.hero, 'full_width')}>Hil studio</div>
-						<section className='breakout'>
-							<SectionTwo />
-						</section>
-						<ProjectsSection />
-						<img
-							src={one}
-							className='breakout'
-							style={{
-								justifySelf: 'center',
-								height: '800px',
-								backgroundAttachment: 'fixed',
-								margin: '4rem 0',
-							}}
-						/>
+					<Layout>
+						<div className='content_grid'>
+							<div className={clsx(styles.hero, 'full_width')}>Hil studio</div>
+							<section className='breakout'>
+								<SectionTwo />
+							</section>
+							<ProjectsSection />
+							<img
+								src={one}
+								className='breakout'
+								style={{
+									justifySelf: 'center',
+									height: '800px',
+									backgroundAttachment: 'fixed',
+									margin: '4rem 0',
+								}}
+							/>
 
-						<div className='full_width'>
-							<HorizontalScroll />
+							<div className='full_width'>
+								<HorizontalScroll />
+							</div>
+							<div className='breakout'>
+								<WeDoSection />
+							</div>
+							<div className='breakout'>
+								<WhyWeSection />
+							</div>
+							<div className='full_width'>
+								<Footer />
+							</div>
 						</div>
-						<div className='breakout'>
-							<WeDoSection />
-						</div>
-						<div className='breakout'>
-							<WhyWeSection />
-						</div>
-						<div className='full_width'>
-							<Footer />
-						</div>
-					</div>
+					</Layout>
 				),
 			},
 			{
 				path: 'contact-us',
-				Component: ContactUs,
+				Component: () => (
+					<Layout>
+						<ContactUs />
+					</Layout>
+				),
 			},
 		],
 	},
