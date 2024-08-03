@@ -7,6 +7,7 @@ import uiUx from 'assets/images/ui-ux.jpg'
 import webDevelopment from 'assets/images/web-development.jpg'
 import branding from 'assets/images/branding.png'
 import mobileDevelopment from 'assets/images/mobile-development.png'
+import { AnimatedText } from 'components/animated-text/animated-text'
 
 const skills = [
 	{
@@ -37,7 +38,7 @@ export const WeDoSection = () => {
 	return (
 		<div>
 			<div className={styles.header}>
-				<h2 className={styles.title}>Some of our main unbeatable forces to change the world.</h2>
+				<AnimatedText text='Some of our main unbeatable forces to change the world.' className={styles.title} />
 				<div className={styles.arrows}>
 					<button
 						className={styles.arrows__button}

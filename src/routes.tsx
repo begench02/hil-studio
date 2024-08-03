@@ -13,6 +13,7 @@ import one from 'assets/images/2.jpg'
 import clsx from 'clsx'
 import { AnimatePresence } from 'framer-motion'
 import { AnimatedOutlet } from 'components/animated-outlet'
+import { AnimatedText } from 'components/animated-text/animated-text'
 
 export const Routes: RouteObject[] = [
 	{
@@ -28,7 +29,7 @@ export const Routes: RouteObject[] = [
 				Component: () => (
 					<Layout>
 						<div className='content_grid'>
-							<div className={clsx(styles.hero, 'full_width')}>Hil studio</div>
+							<AnimatedText text='Hil studio' className={clsx(styles.hero, 'full_width')} />
 							<section className='breakout'>
 								<SectionTwo />
 							</section>

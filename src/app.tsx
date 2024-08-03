@@ -11,7 +11,6 @@ export const App = () => {
 	return (
 		<main className={styles.main}>
 			<RouterProvider router={router} />
-			
 		</main>
 	)
 }

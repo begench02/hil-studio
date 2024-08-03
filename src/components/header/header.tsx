@@ -2,10 +2,16 @@ import { FlipLink } from 'components/hover-animation-1/hover-animation-1'
 import styles from './header.module.sass'
 import { Link } from 'react-router-dom'
 import Logo from 'assets/images/icons/logo4.react.svg'
+import { motion } from 'framer-motion'
 
 export const Header = () => {
 	return (
-		<header className={`${styles.main} full_width`}>
+		<motion.header
+			className={`${styles.main} full_width`}
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			transition={{ duration: 2, delay: 0.4 }}
+		>
 			<nav>
 				<ul>
 					<li>
@@ -35,6 +41,6 @@ export const Header = () => {
 					</li>
 				</ul>
 			</nav>
-		</header>
+		</motion.header>
 	)
 }
