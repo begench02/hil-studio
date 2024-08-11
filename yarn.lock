@@ -1059,6 +1059,11 @@
   dependencies:
     "@jridgewell/trace-mapping" "0.3.9"
 
+"@darkroom.engineering/tempus@^0.0.46":
+  version "0.0.46"
+  resolved "https://registry.yarnpkg.com/@darkroom.engineering/tempus/-/tempus-0.0.46.tgz#3d958807503e4055fcc4a1aeeff83ca0546c62f0"
+  integrity sha512-s5vav3KMHYezvUCl4ee5epg0oimF6M8C9gAaKxFnFaTvX2q3ywFDryIv6XLd0mRFUt3S1uHDJqKaiEcs2ZVSvw==
+
 "@discoveryjs/json-ext@^0.5.0":
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/@discoveryjs/json-ext/-/json-ext-0.5.7.tgz#1d572bfbbe14b7704e0ba0f39b74815b84870d70"
@@ -4265,6 +4270,13 @@ launch-editor@^2.6.0:
   dependencies:
     picocolors "^1.0.0"
     shell-quote "^1.8.1"
+
+lenis@^1.1.9:
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/lenis/-/lenis-1.1.9.tgz#27d61daf614f8456a95d8b62d65fe61a7e625119"
+  integrity sha512-xU2UU1J8mJCiWBSfiMWsC/kPbQMIadSsJiEu3mVqptXGnwo/FUnfp8xCyiOJEvBwzqx4XDdB6TKYFn83y871vA==
+  dependencies:
+    "@darkroom.engineering/tempus" "^0.0.46"
 
 levdist@^1.0.0:
   version "1.0.0"

@@ -9,11 +9,11 @@ import styles from './app.module.sass'
 import type { RouteObject } from 'react-router-dom'
 import { ContactUs } from 'pages/contact-us/contact-us'
 import { Layout } from 'components/layout/layout'
-import one from 'assets/images/2.jpg'
 import clsx from 'clsx'
 import { AnimatePresence } from 'framer-motion'
 import { AnimatedOutlet } from 'components/animated-outlet'
 import { AnimatedText } from 'components/animated-text/animated-text'
+import { ParallaxImages } from 'pages/home/parallax-images/parallax-images'
 
 export const Routes: RouteObject[] = [
 	{
@@ -34,16 +34,10 @@ export const Routes: RouteObject[] = [
 								<SectionTwo />
 							</section>
 							<ProjectsSection />
-							<img
-								src={one}
-								className='breakout'
-								style={{
-									justifySelf: 'center',
-									height: '800px',
-									backgroundAttachment: 'fixed',
-									margin: '4rem 0',
-								}}
-							/>
+
+							<section className='full_width'>
+								<ParallaxImages />
+							</section>
 
 							<div className='full_width'>
 								<HorizontalScroll />
@@ -54,9 +48,9 @@ export const Routes: RouteObject[] = [
 							<div className='breakout'>
 								<WhyWeSection />
 							</div>
-							<div className='full_width'>
+							{/* <div className='full_width'>
 								<Footer />
-							</div>
+							</div> */}
 						</div>
 					</Layout>
 				),
@@ -70,5 +64,9 @@ export const Routes: RouteObject[] = [
 				),
 			},
 		],
+	},
+	{
+		path: 'test',
+		element: <ParallaxImages />,
 	},
 ]

@@ -70,6 +70,9 @@ export const webpackCommon: Configuration = {
 											currentColor: true,
 										},
 									},
+									{
+										cleanupIds: false,
+									},
 								],
 							},
 						},
