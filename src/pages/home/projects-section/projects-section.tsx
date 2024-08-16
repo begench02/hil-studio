@@ -4,18 +4,19 @@ import AdHaven from 'assets/images/AdHaven.png'
 import clsx from 'clsx'
 import styles from './projects-section.module.sass'
 import HereketCheshmesi from 'assets/images/hereket-cheshmesi.png'
+import { TextOpacity } from 'components/text-opacity/text-opacity'
 
 export const ProjectsSection = () => {
 	return (
 		<>
 			<div className={clsx(styles.header, 'breakout')}>
-				<h1 className={styles.header__title}>Study cases</h1>
+				{/* <TextOpacity className={styles.header__title} text='Study cases' /> */}
 				<div className={styles.header__content}>
 					<div>
-						<p>
-							With a touch out design power, we have created various design that are beyond the
-							imagination of other designers on this earth.
-						</p>
+						<TextOpacity
+							text='With a touch out design power, we have created various design that are beyond the
+							imagination of other designers on this earth.'
+						/>
 					</div>
 					<div className={styles.buttons}>
 						<Button>LET,S TALK</Button>

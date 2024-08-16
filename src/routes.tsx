@@ -14,6 +14,7 @@ import { AnimatePresence } from 'framer-motion'
 import { AnimatedOutlet } from 'components/animated-outlet'
 import { AnimatedText } from 'components/animated-text/animated-text'
 import { ParallaxImages } from 'pages/home/parallax-images/parallax-images'
+import { TextMask } from 'components/text-mask/text-mask'
 
 export const Routes: RouteObject[] = [
 	{
@@ -54,6 +55,10 @@ export const Routes: RouteObject[] = [
 						</div>
 					</Layout>
 				),
+			},
+			{
+				path: 'test',
+				Component: TextMask,
 			},
 			{
 				path: 'contact-us',

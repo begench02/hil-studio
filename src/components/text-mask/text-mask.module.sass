@@ -1,0 +1,18 @@
+@use 'styles/_colors' as s
+
+.main
+    position: relative
+
+.mask, .body
+    color: #afa18f
+    cursor: default
+    span
+        color: s.$accent-color
+
+.mask
+    mask-image: url('assets/images/ellipse.svg')
+    mask-repeat: no-repeat
+    mask-size: 40px
+    background: s.$accent-color
+    position: absolute
+    color: black

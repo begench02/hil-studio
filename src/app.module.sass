@@ -1,14 +1,10 @@
-@use 'styles/_fonts.sass'
+@use 'styles' as s
 
 .main
     background-color: #161616
     min-height: 100vh
-    isolation: isolate
-    // overflow: hidden
     font-family: Nunito, sans-serif
-    display: grid
-    align-items: start
-    color: #fff
+    color: s.$text-main
 
 .hero
     display: grid
@@ -23,9 +19,3 @@
     background-clip: text
     background-size: contain
     // background-repeat: no-repeat
-
-.logo
-    line-height: 1
-    width: 1500px
-    height: 400px
-    text-align: start

@@ -1,11 +1,10 @@
+@use 'styles' as s
+
 *, *::before, *::after
     box-sizing: border-box
 
 *
     margin: 0
-
-html
-    position: relative // Add
 
 body
     heline-height: 1.5rem
@@ -27,18 +26,12 @@ p, h1, h2, h3, h4, h5, h6, pre
     word-wrap: break-word
     hyphens: auto
 
-#root, #__next
-    isolation: isolate
-
 li
     list-style: none
 
 a
     color: inherit
     text-decoration: none
-
-section
-    margin: 4rem 0
 
 .content_grid
     --padding-inline: 1rem
@@ -55,5 +48,6 @@ section
     & > .full_width
         grid-column: full-width
 
+// ====== Logo svg icon styles
 .logo6_react_svg__first
     fill: red
