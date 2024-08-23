@@ -15,12 +15,10 @@ export const Header = () => {
 			<nav>
 				<ul>
 					<li>
-						<Link to='clients'>
-							<FlipLink href='#'>Clients</FlipLink>
-						</Link>
+						<FlipLink to='clients'>Clients</FlipLink>
 					</li>
 					<li>
-						<FlipLink href='#'>Projects</FlipLink>
+						<FlipLink to='#'>Projects</FlipLink>
 					</li>
 				</ul>
 			</nav>
@@ -32,12 +30,10 @@ export const Header = () => {
 			<nav className={styles.nav_end}>
 				<ul>
 					<li>
-						<FlipLink href='#'>About</FlipLink>
+						<FlipLink to=''>About</FlipLink>
 					</li>
 					<li>
-						<Link to='contact-us'>
-							<FlipLink href='#'>Contacts</FlipLink>
-						</Link>
+						<FlipLink to='contact-us'>Contacts</FlipLink>
 					</li>
 				</ul>
 			</nav>

@@ -26,10 +26,6 @@ const skills = [
 		image: mobileDevelopment,
 		title: 'Mobile Development',
 	},
-	{
-		image: uiUx,
-		title: 'UI/UX Design',
-	},
 ]
 
 export const WeDoSection = () => {

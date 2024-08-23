@@ -37,7 +37,7 @@ const Word: FC<WordType> = (props) => {
 				const opacity = useTransform(progress, [start, end], [0, 1])
 
 				return (
-					<span>
+					<span key={index}>
 						<span className={styles.shadow}>{char}</span>
 						<motion.span key={index} style={{ opacity }}>
 							{char}

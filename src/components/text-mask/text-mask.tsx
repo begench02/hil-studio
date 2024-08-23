@@ -5,7 +5,7 @@ import { useMousePosition } from 'hooks/useMousePosition.hook'
 
 export const TextMask = () => {
 	const [isHovered, setHovered] = useState(false)
-	const ref = useRef()
+	const ref = useRef(null)
 	const { x, y } = useMousePosition(ref)
 	const size = isHovered ? 400 : 40
 

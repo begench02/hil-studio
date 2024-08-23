@@ -6,18 +6,18 @@ import clients from 'assets/images/clients.jpg'
 import freeConsulting from 'assets/images/free-consulting.jpg'
 import styles from './hover-animation-2.module.sass'
 
-export const App = () => {
-	return (
-		<section>
-			<div>
-				<Link heading='About' subheading='Learn what we do here' imgSrc={aboutUs} href='#' />
-				<Link heading='Clients' subheading='We work with great people' imgSrc={clients} href='#' />
-				<Link heading='Portfolio' subheading='Our work speaks for itself' href='#' imgSrc={aboutUs} />
-				<Link heading='Careers' subheading='We want cool people' href='#' imgSrc={clients} />
-			</div>
-		</section>
-	)
-}
+// export const App = () => {
+// 	return (
+// 		<section>
+// 			<div>
+// 				<Link heading='About' subheading='Learn what we do here' imgSrc={aboutUs} href='#' />
+// 				<Link heading='Clients' subheading='We work with great people' imgSrc={clients} href='#' />
+// 				<Link heading='Portfolio' subheading='Our work speaks for itself' href='#' imgSrc={aboutUs} />
+// 				<Link heading='Careers' subheading='We want cool people' href='#' imgSrc={clients} />
+// 			</div>
+// 		</section>
+// 	)
+// }
 
 export const Link: FC<LinkProps> = (props) => {
 	const { heading, subheading, imgSrc, href } = props

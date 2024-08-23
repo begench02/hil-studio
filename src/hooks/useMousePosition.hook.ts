@@ -15,10 +15,10 @@ export const useMousePosition = (ref: any) => {
 	}
 
 	useEffect(() => {
-		ref.current.addEventListener('mousemove', updateMousePosition)
+		ref.current?.addEventListener('mousemove', updateMousePosition)
 
-		return () => ref.current.removeEventListener('mousemove', updateMousePosition)
-	}, [])
+		return () => ref.current?.removeEventListener('mousemove', updateMousePosition)
+	}, [ref])
 
 	return mousePosition
 }
